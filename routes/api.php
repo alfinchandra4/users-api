@@ -31,5 +31,4 @@ Route::group(['middleware' => 'jwt.auth'], function () {
     Route::patch('update/{user_id}', [UserController::class, 'update']);
     Route::delete('delete/{user_id}', [UserController::class, 'delete']);
     Route::get('users', [UserController::class, 'show']);
-
 });
